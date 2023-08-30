@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Home | Mini Project with RevoU</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <img src="assets/revo.png" alt="logo" />
+      <div>
+        <button onclick="Home()">Home</button>
+        <button onclick="Profile()">Our Profile</button>
+        <button onclick="Achievement()">Achievement</button>
+        <button onclick="MessageUs()">Message Us</button>
+      </div>
+    </nav>
+    <header>
+      <h1 id="titleShowName">Hi master, Welcome to My Website!</h1>
+      <p>
+        This is my exercise with RevoU. You can input your data to show your
+        name! 😁
+      </p>
+    </header>
+    <main>
+      <div class="container-introduction">
+        <div class="img">
+          <img src="assets/college.jpg" alt="photo" border="2" />
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+          provident est tempore molestias itaque rerum laboriosam ipsum,
+          commodi, optio voluptate voluptatum ratione. Voluptas molestiae modi
+          distinctio dolores commodi reiciendis eveniet culpa, dolorum dolore?
+          Labore cumque sapiente vero doloribus, voluptatem vel dolor quae fuga
+          saepe laboriosam commodi voluptates atque suscipit, porro quisquam non
+          veritatis. Ullam optio perspiciatis quisquam quod distinctio aliquam.
+          Non quasi laboriosam accusamus culpa, quisquam, itaque asperiores
+          quaerat nulla autem optio aperiam corrupti consequuntur dolor omnis
+          cupiditate blanditiis iure nobis labore aspernatur nostrum aut. Alias
+          blanditiis ab sunt adipisci tenetur ad, enim natus error numquam.
+          Excepturi impedit earum quia.
+        </p>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          reprehenderit cupiditate, nihil reiciendis nobis officia molestiae
+          saepe quasi at nulla inventore eum, molestias omnis blanditiis
+          excepturi accusantium necessitatibus possimus ducimus odio minus
+          facilis neque. Sit atque ea itaque cupiditate expedita quidem eaque
+          sequi consequuntur quaerat molestiae libero quis, est maxime, et
+          explicabo provident eum dolorem aliquam enim laboriosam neque
+          voluptates veniam reprehenderit odio. Similique neque quaerat
+          obcaecati. Consequatur adipisci, vel eius aliquid quod doloribus iste
+          doloremque pariatur deserunt quia modi molestiae velit reprehenderit
+          suscipit perspiciatis repudiandae minima totam nesciunt esse illum
+          laborum harum consequuntur tempore. Exercitationem reiciendis dicta
+          quas at.
+        </p>
+      </div>
+      <div class="container-facilitation">
+        <h1>Our Facilitation</h1>
+        <div class="facilities">
+          <div class="facility">
+            <div class="circle">
+              <img src="assets/teacher.jpg" alt="Teacher" border="2" />
+            </div>
+            <div class="facility-text">
+              <p>Professional Teacher</p>
+            </div>
+          </div>
+          <div class="facility">
+            <div class="circle">
+              <img src="assets/field.jpg" alt="Sport Field" border="2" />
+            </div>
+            <div class="facility-text">
+              <p>Sport Field</p>
+            </div>
+          </div>
+          <div class="facility">
+            <div class="circle">
+              <img src="assets/classroom.jpg" alt="Classroom" border="2" />
+            </div>
+            <div class="facility-text">
+              <p>Classroom</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="message-us">
+        <h1>Message Us</h1>
+        <div class="message">
+          <div class="form">
+            <form action="#" method="post">
+              <div class="grid-form">
+                <div><label for="">Name</label></div>
+                <div>:</div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="What's your name?"
+                    class="textbox-form"
+                    id="nameForm"
+                  />
+                </div>
+              </div>
+              <div class="grid-form">
+                <div><label for="">Birthday</label></div>
+                <div>:</div>
+                <div>
+                  <input type="date" class="textbox-form" id="dateForm" />
+                </div>
+              </div>
+              <div class="grid-form">
+                <div><label for="">Gender</label></div>
+                <div>:</div>
+                <div class="wrapper-rdogender">
+                  <div>
+                    <input type="radio" name="rdoGender" id="rdoMale" checked />
+                    <label for="rdoMale">Male</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="rdoGender" id="rdoFemale" />
+                    <label for="rdoFemale">Female</label>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-form">
+                <div><label for="">Messages</label></div>
+                <div>:</div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Messages..."
+                    class="textbox-form"
+                    id="messagesForm"
+                  />
+                </div>
+              </div>
+              <input
+                type="button"
+                value="Submit"
+                class="btn-submit"
+                id="btnSubmit"
+                onclick="SubmitForm()"
+              />
+            </form>
+          </div>
+          <div class="result">
+            <div class="grid-result">
+              <div><label name="currentTimeResult">Curent Time</label></div>
+              <div>:</div>
+              <div>
+                <label for="currentTimeResult" id="currentTimeResult"
+                  >none</label
+                >
+              </div>
+            </div>
+            <div class="grid-result">
+              <div><label name="nameResult">Name</label></div>
+              <div>:</div>
+              <div><label for="nameResult" id="nameResult">none</label></div>
+            </div>
+            <div class="grid-result">
+              <div><label name="birthdayResult">Birthday</label></div>
+              <div>:</div>
+              <div>
+                <label for="birthdayResult" id="birthdayResult">none</label>
+              </div>
+            </div>
+            <div class="grid-result">
+              <div><label name="genderResult">Gender</label></div>
+              <div>:</div>
+              <div>
+                <label for="genderResult" id="genderResult">none</label>
+              </div>
+            </div>
+            <div class="grid-result">
+              <div><label name="messagesResult">Messages</label></div>
+              <div>:</div>
+              <div>
+                <label for="messagesResult" id="messagesResult">none</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <p>Created by Stefanus Loveniko &copy;2023</p>
+      </div>
+    </footer>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
