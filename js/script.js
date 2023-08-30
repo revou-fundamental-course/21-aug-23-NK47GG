@@ -16,7 +16,7 @@ const titleShowName = document.getElementById("titleShowName");
 
 if (
   localStorage.getItem("name") &&
-  window.location.pathname === "/index.html"
+  window.location.pathname === "/21-aug-23-NK47GG/index.html"
 ) {
   titleShowName.innerText = `Hi ${localStorage.getItem(
     "name"
